@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
+
+:root {
+  --primary-color: rgb(13, 106,134);
+  --secondary-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.col {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.col-1, .col-2 {
+    margin: 0 50px;
+}
+
+form input, form label, form button{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    height: 30px;
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+button {
+    margin-top: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+
+.paragrafo-resultado {
+    background: rgb(109, 253, 182);
+    padding: 10px 20px;
+}
+
+.paragrafo-incorreto {
+    background: rgb(245, 147, 130);
+    padding: 10px 20px;
+}
